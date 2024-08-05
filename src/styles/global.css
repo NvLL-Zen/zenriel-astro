@@ -73,6 +73,7 @@ h1, h2 {
 
 #P1-D2 {
     font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.25vw;
     color: red;
     align-self: center;
     text-align: center;
@@ -207,6 +208,10 @@ h1, h2 {
 
     #P1-D1::before {
         box-shadow: red 11px -7px 0px 6px;
+    }
+
+    #P1-D2 {
+        font-size: 2.75vw;
     }
 
     #P2 {

@@ -1,0 +1,18 @@
+---
+const {id: idName, ...rest} = Astro.props;
+---
+
+<div id={idName} {...rest}>
+    <slot />
+</div>
+
+<style>
+div {
+    margin: 0 auto;
+    height: 99vh;
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+</style>

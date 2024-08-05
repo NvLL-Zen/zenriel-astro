@@ -1,24 +1,13 @@
 ---
+import { Image } from 'astro:assets'
 import '../styles/global.css'
-import Section from '../components/section.astro'
+import Section from '../layouts/section.astro'
+import Main from '../layouts/main.astro'
+import Ojan_Pic from '../images/Ojan.jpeg'
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <title>ZR</title>
-</head>
-<body>
-    <div id="P1" class="section">
+<Main>
+    <Section>
         <div id="P1-D1">
             <h1 id="P1-D1-H1" class="P1-D1">やあ、俺はファウザン・リズキ</h1>
             <h2 class="P1-D1">A.K.A ゼンリエル / Zenriel </h3>
@@ -26,8 +15,8 @@ import Section from '../components/section.astro'
         <div id="P1-D2">
             <h2>Scroll Down</h2>
         </div>
-    </div>
-    <div id="P2" class="section">
+    </Section>
+    <Section id="P2">
         <div id="P2-D1" class="P2">
             <h1 class="P2" id="P2-D1-H1">
                 The name's Fauzan, but you can also call me Ojan.
@@ -51,7 +40,7 @@ import Section from '../components/section.astro'
             </div>
             <div id="P2-D2-EX" class="P2">
                 <div id="P2-D2-D2" class="P2">
-                    <img class="P2" id="P2-D2-I1" src="../static/css/Ojan.jpeg" alt="Ojan IMG">
+					<Image src={Ojan_Pic} alt="Ojan" class="P2" id='P2-D2-I1' />
                 </div>
                 <div id="P2-D2-TermText" class="P2">
                     <h3 class="P2-D2-TermText">Zenriel@Zen</h3>
@@ -66,40 +55,8 @@ import Section from '../components/section.astro'
             </div>
             <h1 id="P2-D2-E3" class="P2">zenriel@zen:~$: </h1>
         </div>
-    </div>
-
-</body>
-<script>
-import { xType,xRevType } from "../scripts/SymType";
-
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-document.addEventListener("DOMContentLoaded", async () => {
-  const mainName = document.querySelector("#P1-D1-H1");
-  const root = document.documentElement;
-  const changeNameEng = "Hello, I'm Fauzan Rizky";
-  const changeNameZh = "やあ、俺はファウザン・リズキ";
-  await sleep(1500)
-  while(true){
-    root.style.setProperty('--P1D1bg', '#FFFFFF')
-    xRevType(mainName, "_")
-    await sleep(750)
-    xType(mainName, changeNameEng, "_")
-    await sleep(5000)
-    
-
-    root.style.setProperty('--P1D1bg', '#51EEFC')
-    xRevType(mainName, "_")
-    await sleep(1200)
-    xType(mainName, changeNameZh, "_")
-    await sleep(5000)
-  }
-})
-
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
-}, false);
-</script>
-</html>
+    </Section>
+    <script src="../scripts/index_script.js"></script>
+</Main>
 
 <!-- Version 1.3-->
