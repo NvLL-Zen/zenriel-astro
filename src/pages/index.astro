@@ -1,16 +1,105 @@
 ---
-
+import '../styles/global.css'
+import Section from '../components/section.astro'
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>ZR</title>
+</head>
+<body>
+    <div id="P1" class="section">
+        <div id="P1-D1">
+            <h1 id="P1-D1-H1" class="P1-D1">やあ、俺はファウザン・リズキ</h1>
+            <h2 class="P1-D1">A.K.A ゼンリエル / Zenriel </h3>
+        </div>
+        <div id="P1-D2">
+            <h2>Scroll Down</h2>
+        </div>
+    </div>
+    <div id="P2" class="section">
+        <div id="P2-D1" class="P2">
+            <h1 class="P2" id="P2-D1-H1">
+                The name's Fauzan, but you can also call me Ojan.
+            </h1>
+            <h1 class="P2" id="P2-D1-H2">
+                I'm an enthusiastic 11th grade high school student with a deep passion for coding and technology. 
+                My journey in the world of programming began with Python, which remains my primary and favorite language due to its simplicity and versatility. 
+                Whether it's building web applications, web scraping, Python is my go-to tool.
+            </h1>
+            <h1 class="P2" id="P2-D1-H3">
+                When I'm not immersed in code, I enjoy unwinding with video games. 
+                They provide a perfect balance of entertainment, challenge and strategic thinking. 
+                Combining my love for programming and videogame, 
+                I often find myself exploring the intersection of technology and interactive entertainment.
+            </h1>
+        </div>
+        <div id="P2-D2" class="P2">
+            <div id="P2-D2-D1" class="P2">
+                <h1 id="P2-D2-H1" class="P2">zenfetch.sh</h1>
+                <h1 id="P2-D2-H2" class="P2">-ox</h1>
+            </div>
+            <div id="P2-D2-EX" class="P2">
+                <div id="P2-D2-D2" class="P2">
+                    <img class="P2" id="P2-D2-I1" src="../static/css/Ojan.jpeg" alt="Ojan IMG">
+                </div>
+                <div id="P2-D2-TermText" class="P2">
+                    <h3 class="P2-D2-TermText">Zenriel@Zen</h3>
+                    <h3 class="P2-D2-TermText">------------</h3>
+                    <h3 class="P2-D2-TermText">OS: Windows, Linux(debian)</h3>
+                    <h3 class="P2-D2-TermText">Shell: cmd/powershell, bash</h3>
+                    <h3 class="P2-D2-TermText">Language: Python, JS</h3>
+                    <h3 class="P2-D2-TermText">Framework: Flask</h3>
+                    <h3 class="P2-D2-TermText">Uptime: 3.8 Years</h3>
+                    <h3 class="P2-D2-TermText">Theme: INTP</h3>
+                </div>
+            </div>
+            <h1 id="P2-D2-E3" class="P2">zenriel@zen:~$: </h1>
+        </div>
+    </div>
+
+</body>
+<script>
+import { xType,xRevType } from "../scripts/SymType";
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const mainName = document.querySelector("#P1-D1-H1");
+  const root = document.documentElement;
+  const changeNameEng = "Hello, I'm Fauzan Rizky";
+  const changeNameZh = "やあ、俺はファウザン・リズキ";
+  await sleep(1500)
+  while(true){
+    root.style.setProperty('--P1D1bg', '#FFFFFF')
+    xRevType(mainName, "_")
+    await sleep(750)
+    xType(mainName, changeNameEng, "_")
+    await sleep(5000)
+    
+
+    root.style.setProperty('--P1D1bg', '#51EEFC')
+    xRevType(mainName, "_")
+    await sleep(1200)
+    xType(mainName, changeNameZh, "_")
+    await sleep(5000)
+  }
+})
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
+}, false);
+</script>
 </html>
+
+<!-- Version 1.3-->
