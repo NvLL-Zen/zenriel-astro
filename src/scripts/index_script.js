@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const mainName = document.querySelector("#P1-D1-H1");
   const root = document.documentElement;
   const changeNameEng = "Hello, I'm Fauzan Rizky";
-  const changeNameZh = "やあ、俺はファウザン・リズキ";
+  const changeNameJp = "やあ、俺はファウザン・リズキー";
   await sleep(2000)
   while(true){
 	root.style.setProperty('--P1D1bg', '#FFFFFF')
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	root.style.setProperty('--P1D1bg', '#51EEFC')
 	xRevType(mainName, "_")
 	await sleep(1200)
-	xType(mainName, changeNameZh, "_")
+	xType(mainName, changeNameJp, "_")
 	await sleep(5000)
   }
 })
