@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #060216;
     margin: 0;
 }
 
@@ -56,6 +56,8 @@ h1, h2 {
     padding-left: 3vw;
     padding-right: 2.5vw;
     width: 45vw;
+    color: transparent;
+    -webkit-text-stroke: 0.70px #FFFDFF;
 }
 
 #P1-D1::before {
@@ -65,8 +67,8 @@ h1, h2 {
     right: 0;
     bottom: 0;
     position: absolute;
-    background-color: var(--P1D1bg);
-    box-shadow: red 11px -7px 0px 8.5px;
+    background-color: #04010A;
+    box-shadow: #936FF9 11px -10px 0px 8.5px;
     transform: skew(20deg);  
     z-index: -1;
 }
@@ -74,7 +76,7 @@ h1, h2 {
 #P1-D2 {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 1.25vw;
-    color: red;
+    color: #936FF9;
     align-self: center;
     text-align: center;
     position: relative;

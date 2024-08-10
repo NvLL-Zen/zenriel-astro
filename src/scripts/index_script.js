@@ -9,17 +9,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const changeNameJp = "やあ、俺はファウザン・リズキ";
   await sleep(2000)
   while(true){
-	root.style.setProperty('--P1D1bg', '#FFFFFF')
-	xRevType(mainName, "_")
+	xRevType(mainName, "*")
 	await sleep(750)
-	xType(mainName, changeNameEng, "_")
+	xType(mainName, changeNameEng, "*")
 	await sleep(5000)
 	
 
-	root.style.setProperty('--P1D1bg', '#51EEFC')
-	xRevType(mainName, "_")
+	xRevType(mainName, "*")
 	await sleep(1200)
-	xType(mainName, changeNameJp, "_")
+	xType(mainName, changeNameJp, "*")
 	await sleep(5000)
   }
 })
