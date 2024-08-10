@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const mainName = document.querySelector("#P1-D1-H1");
   const root = document.documentElement;
   const changeNameEng = "Hello, I'm Fauzan Rizky";
-  const changeNameJp = "やあ、俺はファウザン・リズキー";
+  const changeNameJp = "やあ、俺はファウザン・リズキ";
   await sleep(2000)
   while(true){
 	root.style.setProperty('--P1D1bg', '#FFFFFF')
