@@ -149,13 +149,12 @@ h1, h2 {
 
 #P2-D2-I1 {
     border: 1px solid #00FF00;
-    filter: blur(20px);
     width: 20vw;
     height: max-content;
     margin-left: 2vw;
-    animation: unblur 1s linear both;
+    /* animation: unblur 1s linear both; */
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    /* animation-delay: calc(var(--scroll) * -1s); */
 }
 
 #P2-D2-D2 {
