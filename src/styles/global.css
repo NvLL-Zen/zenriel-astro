@@ -44,7 +44,7 @@ h1, h2 {
 }
 
 #P1 {
-    background-image: url("../images/PW_bg.jpg");
+    background-image: url("../images/PurpleBG.jpg");
     background-size: 100% 100%;
     height: 100vh;
     position: relative;
@@ -91,7 +91,7 @@ h1, h2 {
 }
 
 #P2 {
-    background-image: url("../images/PW_bg.jpg");
+    background-image: url("../images/PurpleBG.jpg");
     background-size: 100% 100%;
     display: flex;
     flex-direction: row;
