@@ -216,7 +216,7 @@ h1, h2 {
     }
 
     #P1-D1::before {
-        box-shadow: red 11px -7px 0px 6px;
+        box-shadow: #936FF9 11px -7px 0px 6px;
     }
 
     #P1-D2 {
