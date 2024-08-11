@@ -27,7 +27,6 @@
 }
 
 body {
-    background-color: #060216;
     margin: 0;
 }
 
@@ -37,11 +36,18 @@ h1, h2 {
 
 .section {
     margin: 0 auto;
-    height: 99vh;
+    height: 100vh;
     text-align: left;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
+}
+
+#P1 {
+    background-image: url("../images/PW_bg.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
 }
 
 #P1-D1 { 
@@ -56,8 +62,9 @@ h1, h2 {
     padding-left: 3vw;
     padding-right: 2.5vw;
     width: 45vw;
-    color: transparent;
-    -webkit-text-stroke: 0.70px #FFFDFF;
+    color: #FFDFFF;
+    background-color: transparent;
+    -webkit-text-stroke: 0.70px #FFFFFF;
 }
 
 #P1-D1::before {
@@ -67,10 +74,10 @@ h1, h2 {
     right: 0;
     bottom: 0;
     position: absolute;
-    background-color: #04010A;
+    background-color: #060216;
     box-shadow: #936FF9 11px -10px 0px 8.5px;
     transform: skew(20deg);  
-    z-index: -1;
+    z-index: 0;
 }
 
 #P1-D2 {
@@ -84,9 +91,10 @@ h1, h2 {
 }
 
 #P2 {
+    background-image: url("../images/PW_bg.jpg");
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 1vh;
 }
 
 #P2-D1 {
