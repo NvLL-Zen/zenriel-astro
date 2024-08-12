@@ -14,6 +14,12 @@
     }
 }
 
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -158,17 +164,20 @@ h1, h2 {
 
 #P2-D2-I1 {
     border: 1px solid #00FF00;
+    opacity: 0;
     width: 20vw;
-    height: max-content;
-    margin-left: 2vw;
-    /* animation: unblur 1s linear both; */
+    height: 20vw;
+    animation: fadeIn 1s linear both;
     animation-play-state: paused;
-    /* animation-delay: calc(var(--scroll) * -1s); */
+    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #P2-D2-D2 {
-    height: max-content;
-    width: max-content;
+    height: 20vw;
+    width: 20vw;
+    background-image: url("../images/Ojan.jpeg");
+    background-size: contain;
+    margin-left: 2vw;
 }
 
 #P2-D2-TermText {
