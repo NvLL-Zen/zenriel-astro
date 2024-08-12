@@ -64,7 +64,6 @@ h1, h2 {
     width: 45vw;
     color: #FFDFFF;
     background-color: transparent;
-    -webkit-text-stroke: 0.70px #FFFFFF;
 }
 
 #P1-D1::before {
