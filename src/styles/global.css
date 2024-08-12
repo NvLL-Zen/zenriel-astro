@@ -147,15 +147,16 @@ h1, h2 {
     flex-direction: row;
     border: 1px solid white;
     border-radius: 10px 10px 0px 0px;
+    background-color: black;
 }
 
 #P2-D2-H1 {
-    margin-right: 19vw;
+    padding-left: 1vw;
     font-size: 1.5vw;
 }
 
 #P2-D2-H2 {
-    margin-left: 17vw;
+    margin-left: 32.5vw;
 }
 
 #P2-D2-EX {
@@ -259,7 +260,7 @@ h1, h2 {
     }
 
     #P2-D2-H2 {
-        margin-left: 53vw;
+        margin-left: 65vw;
     }
 
     #P2-D2-I1 {
@@ -269,6 +270,10 @@ h1, h2 {
 
     #P2-D2-E3 {
         font-size: 3vw;
+    }
+
+    #P2-D2-TermText {
+        margin-left: 15vw;
     }
 
     .P2 {
